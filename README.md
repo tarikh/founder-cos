@@ -71,7 +71,7 @@ Because shipping a CoS isn't a single-night project — it's an arc. Each versio
 
 The build is documented in essays as it ships:
 
-- v1 — *coming with launch*
+- v1 — https://tarikhkorula.com/wisdom/founder-cos-v1-cowork-edition/
 - v2 — coming with v2
 - v3 — coming with v3
 - v4 — coming with v4
