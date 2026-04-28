@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="700" fill="#FBF8F3"/>
+
+  <!-- Title -->
+  <text x="700" y="62" font-family="Georgia, serif" font-size="38" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Founder CoS</text>
+
+  <!-- Tagline -->
+  <text x="700" y="98" font-family="Georgia, serif" font-size="17" font-style="italic" text-anchor="middle" fill="#5a5a5a">An agentic chief of staff to keep you focused on your highest-leverage tasks.</text>
+
+  <!-- Subtitle -->
+  <text x="700" y="128" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#888">Same brain. Four substrates. Cowork v1 ships today.</text>
+
+  <!-- Spine -->
+  <line x1="170" y1="370" x2="1230" y2="370" stroke="#cfcabd" stroke-width="2" stroke-dasharray="6,6"/>
+  <polygon points="358,366 378,370 358,374" fill="#cfcabd"/>
+  <polygon points="693,366 713,370 693,374" fill="#cfcabd"/>
+  <polygon points="1028,366 1048,370 1028,374" fill="#cfcabd"/>
+
+  <!-- v1 Desktop -->
+  <rect x="45" y="180" width="305" height="410" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <circle cx="197.5" cy="225" r="27" fill="#C26B2D"/>
+  <text x="197.5" y="233" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">v1</text>
+  <text x="197.5" y="290" font-family="Georgia, serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Desktop</text>
+  <text x="197.5" y="316" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#5a5a5a">Cowork on your Mac</text>
+  <line x1="85" y1="340" x2="310" y2="340" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="197.5" y="378" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="2" text-anchor="middle" fill="#1a1a1a">REQUIREMENTS</text>
+  <text x="197.5" y="412" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Cowork Pro</text>
+  <text x="197.5" y="440" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Obsidian</text>
+  <text x="197.5" y="468" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a5a5a">Laptop must be awake</text>
+  <rect x="127.5" y="525" width="140" height="32" rx="16" fill="#C26B2D"/>
+  <text x="197.5" y="546" font-family="Georgia, serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">SHIPPING NOW</text>
+
+  <!-- v2 Always-On -->
+  <rect x="380" y="180" width="305" height="410" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="532.5" cy="225" r="27" fill="#1a1a1a"/>
+  <text x="532.5" y="233" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">v2</text>
+  <text x="532.5" y="290" font-family="Georgia, serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Always-On</text>
+  <text x="532.5" y="316" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#5a5a5a">+ Claude Routines</text>
+  <line x1="420" y1="340" x2="645" y2="340" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="532.5" y="378" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="2" text-anchor="middle" fill="#1a1a1a">REQUIREMENTS</text>
+  <text x="532.5" y="412" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Cowork Max</text>
+  <text x="532.5" y="440" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Obsidian</text>
+  <text x="532.5" y="468" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a5a5a">Runs while you sleep</text>
+  <rect x="462.5" y="525" width="140" height="32" rx="16" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="532.5" y="546" font-family="Georgia, serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">NEXT</text>
+
+  <!-- v3 Self-Hosted + Custom -->
+  <rect x="715" y="180" width="305" height="410" rx="14" fill="#ffffff" stroke="#888" stroke-width="1.5"/>
+  <circle cx="867.5" cy="225" r="27" fill="#888"/>
+  <text x="867.5" y="233" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">v3</text>
+  <text x="867.5" y="290" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Self-Hosted + Custom</text>
+  <text x="867.5" y="316" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#5a5a5a">+ VPS + Agent SDK</text>
+  <line x1="755" y1="340" x2="980" y2="340" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="867.5" y="378" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="2" text-anchor="middle" fill="#1a1a1a">REQUIREMENTS</text>
+  <text x="867.5" y="412" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">VPS</text>
+  <text x="867.5" y="440" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Claude Code Max</text>
+  <text x="867.5" y="468" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a5a5a">Always on in cloud</text>
+  <rect x="797.5" y="525" width="140" height="32" rx="16" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="867.5" y="546" font-family="Georgia, serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#888">PLANNED</text>
+
+  <!-- v4 Beyond Anthropic -->
+  <rect x="1050" y="180" width="305" height="410" rx="14" fill="#ffffff" stroke="#888" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="1202.5" cy="225" r="27" fill="#888"/>
+  <text x="1202.5" y="233" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">v4</text>
+  <text x="1202.5" y="290" font-family="Georgia, serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Beyond Anthropic</text>
+  <text x="1202.5" y="316" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#5a5a5a">Multi-model</text>
+  <line x1="1090" y1="340" x2="1315" y2="340" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="1202.5" y="378" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="2" text-anchor="middle" fill="#1a1a1a">REQUIREMENTS</text>
+  <text x="1202.5" y="412" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">VPS</text>
+  <text x="1202.5" y="440" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Eng experience</text>
+  <text x="1202.5" y="546" font-family="Georgia, serif" font-size="13" font-style="italic" font-weight="bold" text-anchor="middle" fill="#888">HORIZON</text>
+
+  <!-- Footer -->
+  <text x="700" y="640" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a5a5a">Migrations are additive. The brain (SOUL · USER · domain files) carries forward unchanged.</text>
+  <text x="700" y="668" font-family="Georgia, serif" font-size="13" text-anchor="middle" fill="#888">Same brain, swap any layer — including the model.</text>
+</svg>

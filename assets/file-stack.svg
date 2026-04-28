@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1000" fill="#FBF8F3"/>
+
+  <!-- Title -->
+  <text x="600" y="62" font-family="Georgia, serif" font-size="38" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Founder CoS — the file stack</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="98" font-family="Georgia, serif" font-size="17" font-style="italic" text-anchor="middle" fill="#5a5a5a">Six markdown files. Read in order at the start of every conversation.</text>
+
+  <!-- Load order indicator -->
+  <text x="600" y="138" font-family="Georgia, serif" font-size="13" letter-spacing="4" text-anchor="middle" fill="#888">LOAD ORDER</text>
+
+  <!-- Card 1: SOUL.md -->
+  <rect x="160" y="170" width="880" height="90" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="220" cy="215" r="24" fill="#C26B2D"/>
+  <text x="220" y="223" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+  <text x="280" y="207" font-family="Courier, monospace" font-size="22" font-weight="bold" fill="#1a1a1a">SOUL.md</text>
+  <text x="280" y="240" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#5a5a5a">Your CoS's persona, voice, and non-negotiables.</text>
+  <text x="600" y="282" font-size="18" text-anchor="middle" fill="#cfcabd">↓</text>
+
+  <!-- Card 2: USER.md -->
+  <rect x="160" y="290" width="880" height="90" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="220" cy="335" r="24" fill="#1a1a1a"/>
+  <text x="220" y="343" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+  <text x="280" y="327" font-family="Courier, monospace" font-size="22" font-weight="bold" fill="#1a1a1a">USER.md</text>
+  <text x="280" y="360" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#5a5a5a">Who you are. Goals, failure modes, how you decide.</text>
+  <text x="600" y="402" font-size="18" text-anchor="middle" fill="#cfcabd">↓</text>
+
+  <!-- Card 3: AGENTS.md -->
+  <rect x="160" y="410" width="880" height="90" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="220" cy="455" r="24" fill="#1a1a1a"/>
+  <text x="220" y="463" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+  <text x="280" y="447" font-family="Courier, monospace" font-size="22" font-weight="bold" fill="#1a1a1a">AGENTS.md</text>
+  <text x="280" y="480" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#5a5a5a">The operating SOP. Socratic protocol. One question at a time.</text>
+  <text x="600" y="522" font-size="18" text-anchor="middle" fill="#cfcabd">↓</text>
+
+  <!-- Card 4: MEMORY.md -->
+  <rect x="160" y="530" width="880" height="90" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="220" cy="575" r="24" fill="#1a1a1a"/>
+  <text x="220" y="583" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+  <text x="280" y="567" font-family="Courier, monospace" font-size="22" font-weight="bold" fill="#1a1a1a">MEMORY.md</text>
+  <text x="280" y="600" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#5a5a5a">The index. One line per file in the brain.</text>
+  <text x="600" y="642" font-size="18" text-anchor="middle" fill="#cfcabd">↓</text>
+
+  <!-- Card 5: HEARTBEAT.md -->
+  <rect x="160" y="650" width="880" height="90" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="220" cy="695" r="24" fill="#1a1a1a"/>
+  <text x="220" y="703" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+  <text x="280" y="687" font-family="Courier, monospace" font-size="22" font-weight="bold" fill="#1a1a1a">HEARTBEAT.md</text>
+  <text x="280" y="720" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#5a5a5a">Scheduled tasks. Morning brief, weekly goal-set, Friday recap, monthly dream.</text>
+  <text x="600" y="762" font-size="18" text-anchor="middle" fill="#cfcabd">↓</text>
+
+  <!-- Card 6: TODOS.md -->
+  <rect x="160" y="770" width="880" height="90" rx="12" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="220" cy="815" r="24" fill="#C26B2D"/>
+  <text x="220" y="823" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">6</text>
+  <text x="280" y="807" font-family="Courier, monospace" font-size="22" font-weight="bold" fill="#1a1a1a">TODOS.md</text>
+  <text x="280" y="840" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#5a5a5a">Active work. Five buckets: Inbox, Active, Soon, Parked, Done.</text>
+
+  <!-- Footer -->
+  <text x="600" y="912" font-family="Georgia, serif" font-size="15" font-style="italic" text-anchor="middle" fill="#5a5a5a">Same brain across substrates. The files outlive the platform.</text>
+  <text x="600" y="940" font-family="Georgia, serif" font-size="13" text-anchor="middle" fill="#888">v1 → v4. SOUL · USER · AGENTS · MEMORY · HEARTBEAT · TODOS travel forward unchanged.</text>
+</svg>
