@@ -122,7 +122,7 @@ Your CoS maintains a cascading view of your goals at every horizon:
 
 - **North Star** (`north-star.md`) — where the ship is going. Rarely changes. Reread when you're in doubt or off-course.
 - **Quarterly priorities** (`priorities.md`) — the 2-3 things that matter this quarter. Rewritten each quarter.
-- **Weekly goals** — captured Monday morning via the heartbeat (the CoS asks), reviewed Friday.
+- **Weekly goals** — first captured during setup (so the morning brief never launches blind), then refreshed each Monday by the heartbeat and reviewed Friday.
 - **Daily goals** — surfaced in the morning brief as "today's highest-leverage move given the week's goals."
 
 The weekly and daily live inside the heartbeat loop. You don't maintain them manually; the CoS asks, tracks, reminds. When you drift from stated goals for more than a beat, it surfaces the drift before you're three weeks off-course.
@@ -285,6 +285,8 @@ Using `/schedule` in Cowork, create tasks like these. Together they form the foc
 
 **Weekly goal-setting** (Mondays, 8am):
 > Ask me: "What are the 2-3 most important things you want to move forward this week, given `priorities.md` and `north-star.md`?" Save my answer to `weekly/YYYY-WW-goals.md`. These become the reference for the rest of the week's daily briefs.
+>
+> **The inaugural week's goals are captured during setup, not by this task.** Whatever day setup happens on, the first `weekly/YYYY-WW-goals.md` file gets written before any heartbeat fires — otherwise the morning brief launches blind on day 1. This Monday task only *refreshes* the weekly goals once the cadence is running.
 
 **Morning brief** (daily, 8am — on weekdays):
 > Read `north-star.md`, `priorities.md`, this week's goals (`weekly/YYYY-WW-goals.md`), and today's calendar. Produce a morning brief with: today's calendar highlights, the **highest-leverage task given this week's goals**, open items from yesterday, and one socratic question based on a gap in memory. Write it to `daily-brief/{today}.md`.
@@ -393,8 +395,9 @@ If you eventually want something more RL-shaped, the [OpenClaw-RL](https://openc
 | 8 | ~5 min | Create TODOS.md with the 5 buckets, seeded with 3-5 things you already know need doing |
 | 9 | ~3 min | Create HEARTBEAT.md as a stub (lists the heartbeats you'll configure later) |
 | 10 | ~5 min | Configure ONE Cowork scheduled task — the morning brief |
-| 11 | ~3 min | **Wire the brain to auto-load** — paste loading instructions into Cowork → Project settings → Instructions (see "Wire the brain" section below) |
-| **Total** | **~101 min** | **Working CoS. Morning brief fires tomorrow. Stop here.** |
+| 11 | ~5 min | **Capture this week's goals.** Have your CoS ask: "What are the 2-3 most important things you want to move forward this week?" Save to `weekly/YYYY-W##-goals.md`. **Do this regardless of what day of the week setup happens** — the morning brief reads this file from day 1, and the Monday goal-set heartbeat (configured later) only refreshes it. |
+| 12 | ~3 min | **Wire the brain to auto-load** — paste loading instructions into Cowork → Project settings → Instructions (see "Wire the brain" section below) |
+| **Total** | **~106 min** | **Working CoS. Morning brief fires tomorrow with this week's goals already in hand. Stop here.** |
 
 **Defer to later sessions** — these are NOT session-1 requirements:
 
@@ -403,7 +406,7 @@ If you eventually want something more RL-shaped, the [OpenClaw-RL](https://openc
 - `north-star.md`, `priorities.md`, year files — wait for a deliberate destination probe (a 30–60 min conversation, usually in week 2).
 - Refining AGENTS.md beyond the pasted protocol — wait for the system to surface what needs adjusting.
 
-The most common failure mode at this stage is over-engineering before the system is real. Do the 11 steps above. Use it for a week. *Then* build more.
+The most common failure mode at this stage is over-engineering before the system is real. Do the 12 steps above. Use it for a week. *Then* build more.
 
 ---
 
@@ -449,8 +452,9 @@ The complete picture, from blank slate to a fully fleshed-out CoS. **Don't try t
 11. **Create an initial HEARTBEAT.md** as a reference file listing the tasks you'll configure next.
 12. **Create an initial TODOS.md** with the five buckets (Inbox / Active / Soon / Parked / Done). Empty buckets are fine; the structure is what matters. Active starts seeded with 2-5 things from the SOUL/USER interview that you already know need doing.
 13. **Set up one Cowork scheduled task** via `/schedule` — the morning brief is a good first one.
-14. **Use it for a week.** Don't refine the architecture. Just use it. Capture context as you work. Answer the agent's socratic questions. Capture todos liberally to Inbox.
-15. **Reflect and adjust.** After a week, read what the system has captured. Adjust AGENTS.md based on corrections. Add or split domain files as groupings emerge. Audit TODOS — is Active too big? Is Inbox triaged?
+14. **Capture this week's goals as the inaugural `weekly/YYYY-W##-goals.md`.** Whatever day setup happens, do this before the next heartbeat fires. The morning brief reads this file to know what's "highest-leverage given this week's goals" — without it, day 1's brief launches blind. The Monday weekly goal-set heartbeat (configured later) refreshes this file each week; it does NOT do the inaugural capture.
+15. **Use it for a week.** Don't refine the architecture. Just use it. Capture context as you work. Answer the agent's socratic questions. Capture todos liberally to Inbox.
+16. **Reflect and adjust.** After a week, read what the system has captured. Adjust AGENTS.md based on corrections. Add or split domain files as groupings emerge. Audit TODOS — is Active too big? Is Inbox triaged?
 
 ---
 
@@ -745,8 +749,9 @@ If a user has dropped this document into a new Cowork workspace and said "let's 
 8. Populate the `## Facts` section at the top of SOUL.md (name, principal, stage, substrate, load order, public/private posture, setup date). Then paste the socratic protocol into AGENTS.md.
 9. Help the user create the MEMORY.md index, an initial HEARTBEAT.md reference file, and an initial TODOS.md with the five buckets (Inbox / Active / Soon / Parked / Done). Seed Active with 2-5 things from the SOUL/USER interview that already need doing.
 10. Walk them through creating one Cowork scheduled task via `/schedule` (the morning brief is a good first one).
-11. Stop. Encourage them to use the system for a week before refining.
-12. Use the socratic protocol in AGENTS.md as your operating rules throughout. Do not front-load the user with questionnaires. One question at a time, in natural flow.
+11. **Capture the inaugural week's goals.** Before stopping, ask the user: "What are the 2-3 most important things you want to move forward this week?" Save to `weekly/YYYY-W##-goals.md` (use the current ISO week number). The morning brief task you just configured reads this file — without it, the first brief launches blind. **Do this regardless of what day of the week setup happens** — the Monday weekly goal-set heartbeat (which the user will configure later) only *refreshes* the goals; it doesn't handle the inaugural capture. This is a one-question step, not the full destination probe (north-star.md, priorities.md, year file) — that comes in week 2 per the altitude-descent pattern.
+12. Stop. Encourage them to use the system for a week before refining.
+13. Use the socratic protocol in AGENTS.md as your operating rules throughout. Do not front-load the user with questionnaires. One question at a time, in natural flow.
 
 ### Lessons baked in (from the first build of this pattern, 2026-04-27)
 
@@ -761,6 +766,7 @@ These are corrections / reinforcements from running this protocol end-to-end wit
 - **When the user pushes back on a SOUL or framing decision, fold it in fast and don't litigate.** Their pushbacks are gold — they're telling you exactly where the agent is mis-tuned. Update the file, note the correction in feedback memory if it's durable, move on.
 - **The architecture will tempt you to over-engineer. Resist.** New domain files only when content has accumulated. New rules only when corrections have repeated. Keep MEMORY.md as an index, not a memory itself.
 - **Treat TODOS as a primitive, not a side effect.** When the user asks "where do todos live?", don't bury them in a domain file or treat them as a HEARTBEAT byproduct. They get their own file (TODOS.md), their own buckets, their own discipline. Two opposite forces matter: **capture friction LOW** (never push back on a capture; the user *loves* to catch things, that's a feature) and **promotion friction HIGH** (Active stays ≤7 — moving anything to Active requires a deliberate trade). The size of Active and the depth of Inbox are both signal: a sprawling Active means focus has slipped; a stuffed Inbox means triage isn't happening.
+- **Setup must produce the inaugural weekly goals file before any heartbeat fires.** The Monday weekly goal-set task only *refreshes* `weekly/YYYY-W##-goals.md`; it doesn't do the first capture. If setup happens on, say, a Wednesday and you skip the inaugural-goals step, the morning brief launches blind for five days waiting for Monday to roll around. The fix is a 5-minute one-question step at the end of setup, regardless of day. (Surfaced 2026-04-28 — the v1 doc as originally written assumed setup would happen on a Monday or that running blind for a few days was acceptable; neither holds.)
 
 ---
 
