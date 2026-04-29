@@ -31,7 +31,7 @@ Open that folder as your Cowork workspace. In Cowork, type: *"Read `v1-desktop.m
 3. Open Cowork in that workspace.
 4. Type: *"Read `v1-desktop.md` and help me build my chief of staff."*
 
-Your agent will read the guide, verify the requirements below, and begin the interview. Follow along — this is a conversation, not a form. Total time from here to a working CoS: 2-3 hours, most of which is the SOUL interview.
+Your agent will read the guide, verify the requirements below, begin the interview and start building out all necessary files and schedules in Cowork. Follow along — this is a conversation, not a form. Total time from here to a working CoS: 2-3 hours, most of which is the SOUL interview.
 
 ---
 
