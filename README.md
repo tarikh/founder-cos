@@ -26,11 +26,14 @@ git clone https://github.com/tarikh/founder-cos ~/my-chief-of-staff
 cd ~/my-chief-of-staff
 ```
 
-Open that folder as your Cowork workspace. In Cowork, type:
+Then, in this order:
 
-> *Read `v1-desktop.md` and help me build my chief of staff.*
+1. **Open the folder as your Cowork workspace.**
+2. **Connect your tools.** Wire up Gmail, Google Calendar, Slack, and Google Docs via Cowork's built-in connectors. No code, no terminal — just OAuth flows. The CoS uses these to read your real schedule, your real correspondence, your real working context. Without them it's a clever filing cabinet; with them it's a chief of staff.
+3. **Wire the brain to auto-load** (one-time, see next section).
+4. **Kick off the interview.** In Cowork, type: *Read `v1-desktop.md` and help me build my chief of staff.*
 
-Your agent will read the guide, verify the requirements, and begin the interview. Total time from here to a working CoS: 2-3 hours, most of which is the SOUL/USER interview.
+Total time from here to a working CoS: 2-3 hours, most of which is the SOUL/USER interview.
 
 ## Wire the brain to auto-load (do this once)
 

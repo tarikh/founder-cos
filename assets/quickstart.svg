@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1500 1000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1500" height="1000" fill="#FBF8F3"/>
+
+  <!-- Title (pushed down for top safe zone — survives container crops) -->
+  <text x="750" y="170" font-family="Georgia, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Quickstart: v1 Cowork CoS in an afternoon</text>
+
+  <!-- Subtitle -->
+  <text x="750" y="215" font-family="Georgia, serif" font-size="19" font-style="italic" text-anchor="middle" fill="#5a5a5a">Five steps. ~2–3 hours from open to running.</text>
+
+  <!-- Spine arrows between boxes -->
+  <line x1="312" y1="495" x2="342" y2="495" stroke="#cfcabd" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="594" y1="495" x2="624" y2="495" stroke="#cfcabd" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="876" y1="495" x2="906" y2="495" stroke="#cfcabd" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="1158" y1="495" x2="1188" y2="495" stroke="#cfcabd" stroke-width="2" stroke-dasharray="6,6"/>
+  <polygon points="342,495 327,486 327,504" fill="#cfcabd"/>
+  <polygon points="624,495 609,486 609,504" fill="#cfcabd"/>
+  <polygon points="906,495 891,486 891,504" fill="#cfcabd"/>
+  <polygon points="1188,495 1173,486 1173,504" fill="#cfcabd"/>
+
+  <!-- Box 1: Open Cowork -->
+  <rect x="60" y="270" width="252" height="450" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="186" cy="325" r="28" fill="#C26B2D"/>
+  <text x="186" y="334" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+  <text x="186" y="395" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Open Cowork</text>
+  <line x1="90" y1="418" x2="282" y2="418" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="186" y="465" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Create a new project.</text>
+  <text x="186" y="490" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Name it whatever</text>
+  <text x="186" y="515" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">you'll call your CoS.</text>
+  <text x="186" y="685" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#888">~2 minutes</text>
+
+  <!-- Box 2: Connect tools -->
+  <rect x="342" y="270" width="252" height="450" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="468" cy="325" r="28" fill="#1a1a1a"/>
+  <text x="468" y="334" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+  <text x="468" y="395" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Connect tools</text>
+  <line x1="372" y1="418" x2="564" y2="418" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="468" y="465" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Gmail · Calendar</text>
+  <text x="468" y="490" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Slack · Docs</text>
+  <text x="468" y="525" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a5a5a">Built-in. No code.</text>
+  <text x="468" y="685" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#888">~5 minutes</text>
+
+  <!-- Box 3: Drop in blueprint -->
+  <rect x="624" y="270" width="252" height="450" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="750" cy="325" r="28" fill="#1a1a1a"/>
+  <text x="750" y="334" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+  <text x="750" y="395" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Drop in blueprint</text>
+  <line x1="654" y1="418" x2="846" y2="418" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="750" y="468" font-family="Courier, monospace" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">v1-desktop.md</text>
+  <text x="750" y="498" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">into your workspace</text>
+  <text x="750" y="518" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">folder.</text>
+  <text x="750" y="685" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#888">~30 seconds</text>
+
+  <!-- Box 4: Kick it off -->
+  <rect x="906" y="270" width="252" height="450" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="1032" cy="325" r="28" fill="#1a1a1a"/>
+  <text x="1032" y="334" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+  <text x="1032" y="395" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Kick it off</text>
+  <line x1="936" y1="418" x2="1128" y2="418" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="1032" y="460" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#5a5a5a">In Cowork, type:</text>
+  <text x="1032" y="488" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#1a1a1a">"Read v1-desktop.md</text>
+  <text x="1032" y="508" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#1a1a1a">and help me build my</text>
+  <text x="1032" y="528" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#1a1a1a">chief of staff."</text>
+  <text x="1032" y="685" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#888">~10 seconds</text>
+
+  <!-- Box 5: Interview -->
+  <rect x="1188" y="270" width="252" height="450" rx="14" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <circle cx="1314" cy="325" r="28" fill="#C26B2D"/>
+  <text x="1314" y="334" font-family="Georgia, serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+  <text x="1314" y="395" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Interview</text>
+  <line x1="1218" y1="418" x2="1410" y2="418" stroke="#e8e2d3" stroke-width="1"/>
+  <text x="1314" y="465" font-family="Georgia, serif" font-size="15" text-anchor="middle" fill="#1a1a1a">Answer its questions.</text>
+  <text x="1314" y="500" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">CoS ships tomorrow</text>
+  <text x="1314" y="520" font-family="Georgia, serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">morning.</text>
+  <text x="1314" y="685" font-family="Georgia, serif" font-size="14" font-style="italic" text-anchor="middle" fill="#C26B2D">~2–3 hours</text>
+
+  <!-- Footer -->
+  <text x="750" y="845" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#5a5a5a">Blueprint at github.com/tarikh/founder-cos</text>
+  <text x="750" y="880" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#888">Same brain across substrates · v1 → v4</text>
+</svg>

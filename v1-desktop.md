@@ -383,17 +383,18 @@ If you eventually want something more RL-shaped, the [OpenClaw-RL](https://openc
 
 | Step | Time | What |
 |---|---|---|
-| 1 | ~5 min | Name your CoS |
-| 2 | ~45 min | USER.md interview (skip writing samples for now if you don't have any handy) |
-| 3 | ~20 min | SOUL interview (derivative of USER, faster) |
-| 4 | ~5 min | Populate `## Facts` preamble at the top of SOUL.md |
-| 5 | ~2 min | Paste socratic protocol into AGENTS.md |
-| 6 | ~5 min | Create MEMORY.md index |
-| 7 | ~5 min | Create TODOS.md with the 5 buckets, seeded with 3-5 things you already know need doing |
-| 8 | ~3 min | Create HEARTBEAT.md as a stub (lists the heartbeats you'll configure later) |
-| 9 | ~5 min | Configure ONE Cowork scheduled task — the morning brief |
-| 10 | ~3 min | **Wire the brain to auto-load** — paste loading instructions into Cowork → Project settings → Instructions (see "Wire the brain" section below) |
-| **Total** | **~98 min** | **Working CoS. Morning brief fires tomorrow. Stop here.** |
+| 1 | ~3 min | Open Cowork, create the project, **connect Gmail / Google Calendar / Slack / Docs** (built-in connectors, no code) |
+| 2 | ~5 min | Name your CoS |
+| 3 | ~45 min | USER.md interview (skip writing samples for now if you don't have any handy) |
+| 4 | ~20 min | SOUL interview (derivative of USER, faster) |
+| 5 | ~5 min | Populate `## Facts` preamble at the top of SOUL.md |
+| 6 | ~2 min | Paste socratic protocol into AGENTS.md |
+| 7 | ~5 min | Create MEMORY.md index |
+| 8 | ~5 min | Create TODOS.md with the 5 buckets, seeded with 3-5 things you already know need doing |
+| 9 | ~3 min | Create HEARTBEAT.md as a stub (lists the heartbeats you'll configure later) |
+| 10 | ~5 min | Configure ONE Cowork scheduled task — the morning brief |
+| 11 | ~3 min | **Wire the brain to auto-load** — paste loading instructions into Cowork → Project settings → Instructions (see "Wire the brain" section below) |
+| **Total** | **~101 min** | **Working CoS. Morning brief fires tomorrow. Stop here.** |
 
 **Defer to later sessions** — these are NOT session-1 requirements:
 
@@ -402,7 +403,7 @@ If you eventually want something more RL-shaped, the [OpenClaw-RL](https://openc
 - `north-star.md`, `priorities.md`, year files — wait for a deliberate destination probe (a 30–60 min conversation, usually in week 2).
 - Refining AGENTS.md beyond the pasted protocol — wait for the system to surface what needs adjusting.
 
-The most common failure mode at this stage is over-engineering before the system is real. Do the 9 steps above. Use it for a week. *Then* build more.
+The most common failure mode at this stage is over-engineering before the system is real. Do the 11 steps above. Use it for a week. *Then* build more.
 
 ---
 
@@ -437,18 +438,19 @@ The complete picture, from blank slate to a fully fleshed-out CoS. **Don't try t
 
 1. **Choose or create a folder** on your Mac — e.g. `~/chief-of-staff`. This becomes your Cowork workspace folder.
 2. **Open that folder** as your Cowork workspace.
-3. **(Optional but recommended) Open the same folder as an Obsidian vault.** Obsidian makes editing the markdown files nicer than other editors.
-4. **Set up a backup.** Either point the folder at iCloud/Dropbox, or plan a weekly manual backup. Without git, you're vulnerable to laptop failure.
-5. **Name your chief of staff.** This is the OpenClaw pattern: naming turns the agent from "an assistant" into a distinct entity you collaborate with. Short, meaningful, easy to say aloud. This becomes the name used in SOUL.md.
-6. **Do the USER.md interview — this is the foundational one.** 45-60 minutes. The agent asks about your role, focus, values, decision-making style, communication preferences, key relationships, history. Near the end, it offers to analyze writing samples (tweets, posts, emails, memos) to nail your voice — drop them in a `data/` subfolder or paste into the chat. Do not rush this; every other file in the system benefits from a rich USER.md.
-7. **Do the SOUL interview.** 20-30 minutes, informed by USER.md. Faster than USER because SOUL is derivative — once the agent knows who you are, most persona decisions are narrow inferences ("given you hate hedging, should I hedge?") rather than open questions. Populate the `## Facts` section at the top of SOUL.md with the factual scaffolding (name, principal, current stage, substrate, load order, setup date) as part of this step — the factual material is short and naturally co-locates with the persona content.
-8. **Paste the socratic protocol into AGENTS.md** and edit to taste.
-9. **Create the MEMORY.md index** — point at the files you've created so far.
-10. **Create an initial HEARTBEAT.md** as a reference file listing the tasks you'll configure next.
-11. **Create an initial TODOS.md** with the five buckets (Inbox / Active / Soon / Parked / Done). Empty buckets are fine; the structure is what matters. Active starts seeded with 2-5 things from the SOUL/USER interview that you already know need doing.
-12. **Set up one Cowork scheduled task** via `/schedule` — the morning brief is a good first one.
-13. **Use it for a week.** Don't refine the architecture. Just use it. Capture context as you work. Answer the agent's socratic questions. Capture todos liberally to Inbox.
-14. **Reflect and adjust.** After a week, read what the system has captured. Adjust AGENTS.md based on corrections. Add or split domain files as groupings emerge. Audit TODOS — is Active too big? Is Inbox triaged?
+3. **Connect your tools.** In Cowork, wire up Gmail, Google Calendar, Slack, and Google Docs via the built-in connectors. No code, no terminal — just OAuth flows. The CoS uses these to read your real schedule, your real correspondence, your real working context. Without connectors it's a clever filing cabinet; with them it's a chief of staff.
+4. **(Optional but recommended) Open the same folder as an Obsidian vault.** Obsidian makes editing the markdown files nicer than other editors.
+5. **Set up a backup.** Either point the folder at iCloud/Dropbox, or plan a weekly manual backup. Without git, you're vulnerable to laptop failure.
+6. **Name your chief of staff.** This is the OpenClaw pattern: naming turns the agent from "an assistant" into a distinct entity you collaborate with. Short, meaningful, easy to say aloud. This becomes the name used in SOUL.md.
+7. **Do the USER.md interview — this is the foundational one.** 45-60 minutes. The agent asks about your role, focus, values, decision-making style, communication preferences, key relationships, history. Near the end, it offers to analyze writing samples (tweets, posts, emails, memos) to nail your voice — drop them in a `data/` subfolder or paste into the chat. Do not rush this; every other file in the system benefits from a rich USER.md.
+8. **Do the SOUL interview.** 20-30 minutes, informed by USER.md. Faster than USER because SOUL is derivative — once the agent knows who you are, most persona decisions are narrow inferences ("given you hate hedging, should I hedge?") rather than open questions. Populate the `## Facts` section at the top of SOUL.md with the factual scaffolding (name, principal, current stage, substrate, load order, setup date) as part of this step — the factual material is short and naturally co-locates with the persona content.
+9. **Paste the socratic protocol into AGENTS.md** and edit to taste.
+10. **Create the MEMORY.md index** — point at the files you've created so far.
+11. **Create an initial HEARTBEAT.md** as a reference file listing the tasks you'll configure next.
+12. **Create an initial TODOS.md** with the five buckets (Inbox / Active / Soon / Parked / Done). Empty buckets are fine; the structure is what matters. Active starts seeded with 2-5 things from the SOUL/USER interview that you already know need doing.
+13. **Set up one Cowork scheduled task** via `/schedule` — the morning brief is a good first one.
+14. **Use it for a week.** Don't refine the architecture. Just use it. Capture context as you work. Answer the agent's socratic questions. Capture todos liberally to Inbox.
+15. **Reflect and adjust.** After a week, read what the system has captured. Adjust AGENTS.md based on corrections. Add or split domain files as groupings emerge. Audit TODOS — is Active too big? Is Inbox triaged?
 
 ---
 
