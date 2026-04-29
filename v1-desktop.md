@@ -277,7 +277,11 @@ The heartbeat is what keeps the system active between interactive sessions. It's
 
 In this edition, heartbeats are **Cowork scheduled tasks**, created via the `/schedule` skill. Each task is configured separately through Cowork's UI: you give it a prompt and an interval. The task fires when due, runs a normal Cowork turn, and can write output to files, send notifications, or both.
 
+**How to create one.** In Cowork chat, type `/schedule` (or ask the agent to run the schedule skill). You'll be prompted for: a kebab-case task ID (e.g. `morning-brief`), a one-line description, the full prompt the task runs each time, and a cron expression like `0 8 * * 1-5` (or use a one-time `fireAt` timestamp). **Cron is evaluated in your local timezone, not UTC** — so `0 8 * * 1-5` means 8am wherever your laptop is. The skill files end up under `~/Documents/Claude/Scheduled/<task-id>/SKILL.md` — editable directly if you want to refine the prompt later without going back through `/schedule`.
+
 **Important caveat.** Cowork scheduled tasks only run when your desktop is awake and Cowork is open. If your Mac is asleep at the scheduled time, the task is skipped, then re-run on wake with a notification. This works well for morning routines (your Mac is probably awake by 9am anyway) but less well for true 24/7 use cases.
+
+**Second caveat — pre-approve connector permissions.** Any scheduled task that uses a connector tool (Slack, Gmail, Calendar, etc.) needs the permission **pre-approved**, otherwise the scheduled run pauses silently waiting for approval and never delivers. Right after creating a task that uses a connector, click **Run now** in Cowork's scheduled-tasks UI. Cowork will surface a permission prompt for each tool the task calls — approve them ("Allow for all tasks" is the cleanest option). The approval is stored on the task and auto-applies to every future run. Skip this step and your first 8am brief will be a silent failure with no error message.
 
 ### Recommended heartbeat tasks to configure
 
@@ -289,7 +293,7 @@ Using `/schedule` in Cowork, create tasks like these. Together they form the foc
 > **The inaugural week's goals are captured during setup, not by this task.** Whatever day setup happens on, the first `weekly/YYYY-WW-goals.md` file gets written before any heartbeat fires — otherwise the morning brief launches blind on day 1. This Monday task only *refreshes* the weekly goals once the cadence is running.
 
 **Morning brief** (daily, 8am — on weekdays):
-> Read `north-star.md`, `priorities.md`, this week's goals (`weekly/YYYY-WW-goals.md`), and today's calendar. Produce a morning brief with: today's calendar highlights, the **highest-leverage task given this week's goals**, open items from yesterday, and one socratic question based on a gap in memory. Write it to `daily-brief/{today}.md`.
+> Read `north-star.md`, `priorities.md`, this week's goals (`weekly/YYYY-WW-goals.md`), and today's calendar. Produce a morning brief with: today's calendar highlights, the **highest-leverage task given this week's goals**, open items from yesterday, and one socratic question based on a gap in memory. **Write it to `daily-brief/{today}.md` — but if that file already exists (manual re-run, etc.), save as `daily-brief/{today}-pass-N.md` instead so the original morning version is never clobbered.** If `north-star.md`, `priorities.md`, or the weekly goal file is missing (week 1, before the full destination probe), proceed with what's available and flag the gap once at the bottom.
 
 **Weekly recap** (Fridays, 5pm):
 > Read this week's goal file (`weekly/YYYY-WW-goals.md`) and the daily briefs. Honestly assess: did I ship this week's goals? What drifted? What carries over to next week? Write to `weekly/YYYY-WW-recap.md`.
@@ -441,7 +445,7 @@ The complete picture, from blank slate to a fully fleshed-out CoS. **Don't try t
 
 1. **Choose or create a folder** on your Mac — e.g. `~/chief-of-staff`. This becomes your Cowork workspace folder.
 2. **Open that folder** as your Cowork workspace.
-3. **Connect your tools.** In Cowork, wire up Gmail, Google Calendar, Slack, and Google Docs via the built-in connectors. No code, no terminal — just OAuth flows. The CoS uses these to read your real schedule, your real correspondence, your real working context. Without connectors it's a clever filing cabinet; with them it's a chief of staff.
+3. **Connect your tools.** In Cowork, wire up Gmail, Google Calendar, Slack, and Google Docs via the built-in connectors. **Microsoft 365 users:** Cowork has equivalent connectors for Outlook, Microsoft Calendar, and OneDrive — swap them in for the Google ones. No code, no terminal — just OAuth flows. The CoS uses these to read your real schedule, your real correspondence, your real working context. Without connectors it's a clever filing cabinet; with them it's a chief of staff.
 4. **(Optional but recommended) Open the same folder as an Obsidian vault.** Obsidian makes editing the markdown files nicer than other editors.
 5. **Set up a backup.** Either point the folder at iCloud/Dropbox, or plan a weekly manual backup. Without git, you're vulnerable to laptop failure.
 6. **Name your chief of staff.** This is the OpenClaw pattern: naming turns the agent from "an assistant" into a distinct entity you collaborate with. Short, meaningful, easy to say aloud. This becomes the name used in SOUL.md.
