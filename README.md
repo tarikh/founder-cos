@@ -12,7 +12,7 @@ This is a build-in-public project. Same brain across four substrates.
 
 | Version | Substrate | Headline unlock | Status |
 |---|---|---|---|
-| **v1 — Desktop** | Cowork on your Mac | The file stack works. Local heartbeats. *Laptop must be awake.* | 🟢 LIVE |
+| **[v1: Desktop](./v1-desktop.md)** | Cowork on your Mac | The file stack works. Local heartbeats. *Laptop must be awake.* | 🟢 LIVE |
 | **v2 — Always-On** | + Claude Routines + private repo | **Shut the laptop.** Cloud heartbeats. Mobile chat. | 🟡 IN FLIGHT |
 | **v3 — Self-Hosted + Custom** | + VPS + Agent SDK | Your runtime, your code. Custom MCPs · bespoke loops · embeddable. | ⚪ PLANNED |
 | **v4 — Beyond Anthropic** | Multi-model | Brain ports across vendors. GPT, Gemini, open weights. | ⚪ HORIZON |
