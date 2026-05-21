@@ -13,7 +13,7 @@ This is a build-in-public project. Same brain across four substrates.
 | Version | Substrate | Headline unlock | Status |
 |---|---|---|---|
 | **[v1: Desktop](https://github.com/tarikh/founder-cos/blob/main/v1-desktop.md)** | Cowork on your Mac | The file stack works. Local heartbeats. *Laptop must be awake.* | 🟢 LIVE |
-| **v2 — Always-On** | + Claude Routines + private repo | **Shut the laptop.** Cloud heartbeats. Mobile chat. | 🟡 IN FLIGHT |
+| **v2 — Always-On** | + Claude Routines + private repo | **Shut the laptop.** Cloud heartbeats. Mobile chat. | 🟢 LIVE |
 | **v3 — Self-Hosted + Custom** | + VPS + Agent SDK | Your runtime, your code. Custom MCPs · bespoke loops · embeddable. | ⚪ PLANNED |
 | **v4 — Beyond Anthropic** | Multi-model | Brain ports across vendors. GPT, Gemini, open weights. | ⚪ HORIZON |
 
@@ -58,11 +58,23 @@ Voice: direct, simple, sincere, candid. Casual register. Never "great question,"
 
 Now every conversation in this workspace starts with full context.
 
+## Upgrade to v2 (when your laptop being asleep starts to hurt)
+
+Once v1 is running and you feel the laptop-must-be-awake constraint, v2 takes about 30-90 minutes:
+
+1. Move your brain folder out of `~/Documents/` (TCC blocks background sync otherwise).
+2. Push the folder to a private GitHub repo.
+3. Wire a 5-minute local auto-sync via launchd or cron.
+4. Configure your four heartbeat tasks as Claude Routines at `claude.ai/code/routines`, pointed at the repo.
+5. Verify each Routine writes back to the repo and posts to your messaging channel.
+
+The brain doesn't change. Same SOUL.md, same USER.md, same domain files. Only the substrate moves. Full step-by-step in `v2-always-on.md`, including the operational gotchas (PR-mode default on GitHub MCP commits, GPG-signing surprise, OAuth token expiry, fail-loud discipline). Read those before you start — each one costs an hour to discover from scratch.
+
 ## What's in this repo
 
 - **`v1-desktop.md`** — the v1 blueprint. **Start here.**
-- **`v2-always-on.md`** — the v2 blueprint. Stub today; full prose lands when v2 ships (~two weeks from v1 launch).
-- **`assets/`** — diagrams, including the progression chart.
+- **`v2-always-on.md`** — the v2 blueprint. Cloud heartbeats via Claude Routines, brain in a private GitHub repo, shut the laptop and the system keeps running.
+- **`assets/`** — diagrams: progression chart, v1 file stack, v1 quickstart, v2 wiring.
 
 The brain (SOUL.md, USER.md, AGENTS.md, MEMORY.md, domain files) stays private. This repo holds the *pattern*, not anyone's specific brain.
 
@@ -75,7 +87,7 @@ Because shipping a CoS isn't a single-night project — it's an arc. Each versio
 The build is documented in essays as it ships:
 
 - v1 — https://tarikhkorula.com/wisdom/founder-cos-v1-cowork-edition/
-- v2 — coming with v2
+- v2 — https://tarikhkorula.com/wisdom/cos-v2-cloudy-visions
 - v3 — coming with v3
 - v4 — coming with v4
 
