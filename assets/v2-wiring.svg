@@ -1,0 +1,96 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" style="font-family: ui-sans-serif, system-ui, sans-serif;">
+  <title id="title">v2 always-on wiring diagram</title>
+  <desc id="desc">Local brain folder syncs every 5 minutes to a private GitHub repo, which is read by cloud Routines on schedule. Routines post to your messaging channel and write their output back to the repo. The repo pulls back to the laptop, closing the loop.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- LAPTOP / LOCAL -->
+  <g>
+    <rect x="40" y="40" width="220" height="130" rx="10" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+    <text x="150" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="1">LAPTOP</text>
+    <text x="150" y="95" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">~/your-brain/</text>
+    <text x="150" y="115" text-anchor="middle" font-size="12" fill="#4b5563">SOUL · USER · AGENTS</text>
+    <text x="150" y="132" text-anchor="middle" font-size="12" fill="#4b5563">todos · domain files</text>
+    <text x="150" y="155" text-anchor="middle" font-size="11" font-style="italic" fill="#6b7280">launchd / cron: sync every 5 min</text>
+  </g>
+
+  <!-- GITHUB -->
+  <g>
+    <rect x="500" y="40" width="220" height="130" rx="10" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+    <text x="610" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="1">GITHUB</text>
+    <text x="610" y="95" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">private repo</text>
+    <text x="610" y="115" text-anchor="middle" font-size="12" fill="#4b5563">your-username/your-brain</text>
+    <text x="610" y="132" text-anchor="middle" font-size="12" fill="#4b5563">single source of truth</text>
+    <text x="610" y="155" text-anchor="middle" font-size="11" font-style="italic" fill="#6b7280">the bridge</text>
+  </g>
+
+  <!-- push arrow -->
+  <line x1="265" y1="95" x2="495" y2="95" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-accent)"/>
+  <text x="380" y="86" text-anchor="middle" font-size="11" font-weight="500" fill="#3b82f6">git push (auto, 5 min)</text>
+
+  <!-- pull arrow -->
+  <line x1="495" y1="125" x2="265" y2="125" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="380" y="142" text-anchor="middle" font-size="11" fill="#6b7280">git pull (Obsidian / cron)</text>
+
+  <!-- CLOUD ROUTINES -->
+  <g>
+    <rect x="270" y="230" width="220" height="180" rx="10" fill="#ffffff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="380" y="258" text-anchor="middle" font-size="11" font-weight="600" fill="#3b82f6" letter-spacing="1">CLOUD ROUTINES</text>
+    <text x="380" y="278" text-anchor="middle" font-size="13" fill="#4b5563">claude.ai/code/routines</text>
+
+    <line x1="290" y1="295" x2="470" y2="295" stroke="#d4d4d8" stroke-width="1"/>
+
+    <text x="290" y="316" font-size="12" fill="#111827">Mon AM</text>
+    <text x="470" y="316" text-anchor="end" font-size="12" fill="#4b5563">weekly goal-set</text>
+
+    <text x="290" y="338" font-size="12" fill="#111827">Wkdy AM</text>
+    <text x="470" y="338" text-anchor="end" font-size="12" fill="#4b5563">morning brief</text>
+
+    <text x="290" y="360" font-size="12" fill="#111827">Fri PM</text>
+    <text x="470" y="360" text-anchor="end" font-size="12" fill="#4b5563">weekly recap</text>
+
+    <text x="290" y="382" font-size="12" fill="#111827">Monthly</text>
+    <text x="470" y="382" text-anchor="end" font-size="12" fill="#4b5563">consolidation</text>
+  </g>
+
+  <!-- arrows: repo → routines (read brain) -->
+  <path d="M 610 175 Q 610 200 490 250" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-accent)"/>
+  <text x="595" y="215" font-size="11" font-weight="500" fill="#3b82f6">read brain on schedule</text>
+
+  <!-- arrows: routines → repo (write back) -->
+  <path d="M 490 320 Q 580 320 605 175" fill="none" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="600" y="305" font-size="11" fill="#6b7280">commit output</text>
+
+  <!-- SLACK -->
+  <g>
+    <rect x="40" y="230" width="220" height="100" rx="10" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+    <text x="150" y="258" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="1">SLACK / EMAIL</text>
+    <text x="150" y="285" text-anchor="middle" font-size="15" font-weight="600" fill="#111827">your channel</text>
+    <text x="150" y="307" text-anchor="middle" font-size="12" fill="#4b5563">briefs · recaps · ASKs</text>
+  </g>
+
+  <!-- arrow: routines → slack -->
+  <line x1="270" y1="280" x2="262" y2="280" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="266" y="270" text-anchor="middle" font-size="11" fill="#6b7280">post</text>
+
+  <!-- PRINCIPAL -->
+  <g>
+    <rect x="270" y="440" width="220" height="60" rx="10" fill="#f3f4f6" stroke="#d4d4d8" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="380" y="465" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="1">PRINCIPAL</text>
+    <text x="380" y="487" text-anchor="middle" font-size="14" font-weight="600" fill="#111827">you — answer the ASKs</text>
+  </g>
+
+  <!-- arrow: slack → you -->
+  <path d="M 150 335 Q 150 420 275 460" fill="none" stroke="#9ca3af" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- arrow: you → routines (answers loop back) -->
+  <path d="M 380 440 L 380 415" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow-accent)" stroke-dasharray="3 2"/>
+  <text x="395" y="430" font-size="10" fill="#3b82f6">answers → next brief</text>
+</svg>
