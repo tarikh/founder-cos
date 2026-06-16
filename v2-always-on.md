@@ -146,7 +146,7 @@ Two layers. The Routine is the alarm clock. The conversation is the meeting. Bot
 
 ---
 
-## The four operational gotchas (consolidated)
+## The five operational gotchas (consolidated)
 
 If you take nothing else from this document:
 
@@ -154,8 +154,9 @@ If you take nothing else from this document:
 2. **`commit.gpgsign=true` breaks launchd commits** and leaves stale locks behind. Audit `git config` before you trust any auto-sync. (Step 3.)
 3. **GitHub MCP defaults to PR-creation mode** in cloud Routines. The repo write-back fails silently. Build a desktop sibling that handles file writes locally. (Step 5, failure mode A.)
 4. **An autonomous heartbeat without an interactive answer-side is a question that asks itself and waits forever.** The Routine asks; something has to drive the answer. (Step 5, failure mode B.)
+5. **Routines confidently re-assert yesterday's claims** about state that has since changed. The first day this matters, the morning brief will surface 8 of 10 closed ASKs as still open — *"5th brief without an answer," "since 5/8, ~8th brief, protocol failure signal"* — confident, structured, wrong. The Routine rolled yesterday's output forward as scaffold instead of re-reading current brain state. **Fix lives in the prompt:** for every ASK the brief is about to surface, grep the `Done` section of `todos.md` AND the recent `journal/` entries for a closing capture; if found, skip with a one-line note; if not, surface. Default to uncertainty about your own previous outputs. *Pre-read on disk does not equal happened. Listed as open in yesterday's brief does not equal still open today.*
 
-You will discover other smaller things — OAuth tokens expire and need re-grant; Routine prompts need version control because the UI has no history; Routines confidently re-assert yesterday's claims about open ASKs until you build closure-verification into the prompt. The four above are the load-bearing ones.
+Smaller things you'll discover along the way: OAuth tokens expire and need re-grant; Routine prompts need version control because the UI has no history (keep them in `routines/` in the repo, dated); Slack-side rate limits if you cross-post heavily. The five above are the load-bearing ones.
 
 ---
 
