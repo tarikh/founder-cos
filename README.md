@@ -97,7 +97,7 @@ The build is documented in essays as it ships:
 
 ## License
 
-MIT. Fork it. Build your own. Ship.
+MIT. Fork it, build your own, ship.
 
 ---
 
