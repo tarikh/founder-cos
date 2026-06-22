@@ -82,6 +82,10 @@ The brain (SOUL.md, USER.md, AGENTS.md, MEMORY.md, domain files) stays private. 
 
 Because shipping a CoS isn't a single-night project — it's an arc. Each version is a real unlock with a real essay and a real artifact. Forking v1 should be enough to actually use the system today. The later versions add capabilities, not requirements. The whole arc's thesis: **same brain, swap any layer.**
 
+## Codex note
+
+This repo is also the live pattern I use to test Codex against Claude: same markdown brain, same operating rules, same task loops, different model/runtime. The point is not model fandom. It is learning which deployment patterns survive across tools.
+
 ## Companion writing
 
 The build is documented in essays as it ships:
