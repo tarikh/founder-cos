@@ -186,7 +186,7 @@ These aren't optional. The v2 substrate exposes the loop that v1's single-conver
 
 ## When v2 isn't enough → v3
 
-If you hit the Routine per-day caps repeatedly, want to write custom code that runs alongside the prompts, need MCP connectors that don't exist yet, or want messaging surfaces beyond what's available — v3 is the next step. VPS, Agent SDK, your runtime, your code.
+If you hit the Routine per-day caps repeatedly, want to write custom code that runs alongside the prompts, need MCP connectors that don't exist yet, or want messaging surfaces beyond what's available — [v3](v3-slack-vps.md) is the next step. Slack app, VPS, Agent SDK, your runtime, your code.
 
 The brain doesn't change. The substrate does.
 

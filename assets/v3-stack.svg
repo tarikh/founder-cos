@@ -1,0 +1,90 @@
+<svg viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" style="font-family: ui-sans-serif, system-ui, sans-serif;">
+  <title id="title">v3 Slack and VPS stack</title>
+  <desc id="desc">Phone messages go to a Slack channel, through a custom Slack app, to a VPS worker. The worker runs agent turns against a local brain clone, commits captures through a serialized git writer, and syncs with the private GitHub brain repo. Existing cloud Routines may continue posting scheduled heartbeats until migrated.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="640" rx="0" fill="#fbfbfb"/>
+  <text x="480" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#111827">v3: Slack + VPS</text>
+  <text x="480" y="61" text-anchor="middle" font-size="13" fill="#6b7280">Own the interactive surface. Keep the same private brain.</text>
+
+  <rect x="35" y="100" width="170" height="92" rx="12" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+  <text x="120" y="126" text-anchor="middle" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="1">PHONE</text>
+  <text x="120" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Slack app</text>
+  <text x="120" y="170" text-anchor="middle" font-size="12" fill="#4b5563">typed or dictated</text>
+
+  <rect x="270" y="88" width="190" height="116" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="365" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb" letter-spacing="1">SLACK</text>
+  <text x="365" y="141" text-anchor="middle" font-size="16" font-weight="700" fill="#111827">CoS channel</text>
+  <text x="365" y="162" text-anchor="middle" font-size="12" fill="#4b5563">threads · ASKs · capture</text>
+  <text x="365" y="184" text-anchor="middle" font-size="11" font-style="italic" fill="#6b7280">custom app, Socket Mode</text>
+
+  <rect x="540" y="90" width="380" height="360" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="730" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#2563eb" letter-spacing="2">VPS WORKER</text>
+  <text x="730" y="139" text-anchor="middle" font-size="12" fill="#1d4ed8">Node · TypeScript · systemd · fail-loud ops</text>
+
+  <rect x="565" y="165" width="150" height="76" rx="9" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="640" y="188" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb">Bolt gateway</text>
+  <text x="640" y="207" text-anchor="middle" font-size="11" fill="#4b5563">filter user/channel</text>
+  <text x="640" y="224" text-anchor="middle" font-size="11" fill="#4b5563">ack under 2s</text>
+
+  <rect x="745" y="165" width="150" height="76" rx="9" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="820" y="188" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb">Turn queue</text>
+  <text x="820" y="207" text-anchor="middle" font-size="11" fill="#4b5563">one agent turn</text>
+  <text x="820" y="224" text-anchor="middle" font-size="11" fill="#4b5563">at a time</text>
+
+  <rect x="565" y="270" width="150" height="84" rx="9" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="640" y="293" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb">Agent SDK</text>
+  <text x="640" y="312" text-anchor="middle" font-size="11" fill="#4b5563">session per thread</text>
+  <text x="640" y="329" text-anchor="middle" font-size="11" fill="#4b5563">read/edit/write</text>
+  <text x="640" y="346" text-anchor="middle" font-size="10" font-style="italic" fill="#6b7280">no Bash, no git</text>
+
+  <rect x="745" y="270" width="150" height="84" rx="9" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="820" y="293" text-anchor="middle" font-size="11" font-weight="700" fill="#2563eb">Git writer</text>
+  <text x="820" y="312" text-anchor="middle" font-size="11" fill="#4b5563">pull · commit · push</text>
+  <text x="820" y="329" text-anchor="middle" font-size="11" fill="#4b5563">rebase retry</text>
+  <text x="820" y="346" text-anchor="middle" font-size="10" font-style="italic" fill="#6b7280">serialized</text>
+
+  <rect x="620" y="385" width="220" height="46" rx="9" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="730" y="413" text-anchor="middle" font-size="13" font-weight="700" fill="#111827">local brain clone</text>
+
+  <rect x="540" y="505" width="180" height="86" rx="12" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+  <text x="630" y="531" text-anchor="middle" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="1">GITHUB</text>
+  <text x="630" y="555" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">private brain repo</text>
+  <text x="630" y="575" text-anchor="middle" font-size="12" fill="#4b5563">canonical memory</text>
+
+  <rect x="750" y="505" width="170" height="86" rx="12" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+  <text x="835" y="531" text-anchor="middle" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="1">GITHUB</text>
+  <text x="835" y="555" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">worker repo</text>
+  <text x="835" y="575" text-anchor="middle" font-size="12" fill="#4b5563">service code</text>
+
+  <rect x="35" y="300" width="250" height="104" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="160" y="327" text-anchor="middle" font-size="11" font-weight="700" fill="#d97706" letter-spacing="1">EXISTING HEARTBEATS</text>
+  <text x="160" y="352" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Claude Routines</text>
+  <text x="160" y="373" text-anchor="middle" font-size="12" fill="#4b5563">brief · goal-set · recap</text>
+  <text x="160" y="390" text-anchor="middle" font-size="11" font-style="italic" fill="#9a3412">keep until connector parity</text>
+
+  <line x1="205" y1="146" x2="267" y2="146" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+  <line x1="460" y1="146" x2="537" y2="188" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+  <line x1="715" y1="203" x2="742" y2="203" stroke="#6b7280" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <path d="M 820 242 L 820 266" fill="none" stroke="#6b7280" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <line x1="745" y1="312" x2="718" y2="312" stroke="#6b7280" stroke-width="1.3" marker-end="url(#arrow)"/>
+  <path d="M 640 356 Q 640 380 700 385" fill="none" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 820 356 Q 820 382 760 385" fill="none" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 730 432 Q 720 470 650 503" fill="none" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 630 505 Q 610 460 620 432" fill="none" stroke="#6b7280" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M 285 352 Q 420 352 538 330" fill="none" stroke="#d97706" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrow-amber)"/>
+  <path d="M 160 300 Q 190 220 270 175" fill="none" stroke="#d97706" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrow-amber)"/>
+
+  <text x="480" y="620" text-anchor="middle" font-size="12" fill="#6b7280">v3 owns inbound conversation and capture first. Calendar-heavy heartbeats can migrate later.</text>
+</svg>

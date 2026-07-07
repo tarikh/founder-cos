@@ -4,7 +4,7 @@
 
 A force multiplier whose job is to keep you focused on the highest-leverage work, protect your north star from the noise of daily urgency, and make sure your ship makes its destination. Well.
 
-This is a build-in-public project. Same brain across four substrates.
+This is a build-in-public project. Same brain across four substrates: desktop, always-on cloud heartbeats, self-hosted Slack runtime, then multi-model portability.
 
 ![Progression](assets/progression.svg)
 
@@ -12,10 +12,10 @@ This is a build-in-public project. Same brain across four substrates.
 
 | Version | Substrate | Headline unlock | Status |
 |---|---|---|---|
-| **[v1: Desktop](https://github.com/tarikh/founder-cos/blob/main/v1-desktop.md)** | Cowork on your Mac | The file stack works. Local heartbeats. *Laptop must be awake.* | 🟢 LIVE |
-| **[v2: — Always-On](https://github.com/tarikh/founder-cos/blob/main/v2-always-on.md)** | + Claude Routines + private repo | **Shut the laptop.** Cloud heartbeats. Mobile chat. | 🟢 LIVE |
-| **v3 — Self-Hosted + Custom** | + VPS + Agent SDK | Your runtime, your code. Custom MCPs · bespoke loops · embeddable. | ⚪ PLANNED |
-| **v4 — Beyond Anthropic** | Multi-model | Brain ports across vendors. GPT, Gemini, open weights. | ⚪ HORIZON |
+| **[v1: Desktop](v1-desktop.md)** | Cowork on your Mac | The file stack works. Local heartbeats. *Laptop must be awake.* | 🟢 LIVE |
+| **[v2: Always-On](v2-always-on.md)** | Claude Routines + private repo | **Shut the laptop.** Cloud heartbeats. Mobile chat. | 🟢 LIVE |
+| **[v3: Slack + VPS](v3-slack-vps.md)** | Custom Slack app + VPS + Agent SDK | **Own the surface.** Phone-first interactive CoS. Runtime you control. | 🟢 LIVE |
+| **v4: Multi-model** | Multi-model behind the same surface | Brain ports across vendors. GPT, Gemini, open weights. | ⚪ HORIZON |
 
 Migrations are additive. The brain (SOUL · USER · domain files · memory) carries forward unchanged. Only the substrate changes — and at v4, only the model.
 
@@ -70,11 +70,20 @@ Once v1 is running and you feel the laptop-must-be-awake constraint, v2 takes ab
 
 The brain doesn't change. Same SOUL.md, same USER.md, same domain files. Only the substrate moves. Full step-by-step in `v2-always-on.md`, including the operational gotchas (PR-mode default on GitHub MCP commits, GPG-signing surprise, OAuth token expiry, fail-loud discipline). Read those before you start — each one costs an hour to discover from scratch.
 
+## Upgrade to v3 (when the interactive surface starts to hurt)
+
+v2 makes the chief of staff always-on. v3 makes it reachable where the work is already happening.
+
+Upgrade to v3 when the interaction layer becomes the constraint: re-tagging rituals, hosted bot fragility, needing your CoS in Slack threads, wanting custom code, wanting fail-loud writes, or wanting a runtime you can restart yourself.
+
+The brain still doesn't change. The private repo remains the source of truth. v3 adds a custom Slack app, a VPS worker, Agent SDK sessions per Slack thread, and a serialized git writer that owns capture/write-back. Full step-by-step in `v3-slack-vps.md`.
+
 ## What's in this repo
 
 - **`v1-desktop.md`** — the v1 blueprint. **Start here.**
 - **`v2-always-on.md`** — the v2 blueprint. Cloud heartbeats via Claude Routines, brain in a private GitHub repo, shut the laptop and the system keeps running.
-- **`assets/`** — diagrams: progression chart, v1 file stack, v1 quickstart, v2 wiring.
+- **`v3-slack-vps.md`** — the v3 blueprint. Custom Slack app, VPS worker, Agent SDK, same private brain repo, serialized git writer, fail-loud ops.
+- **`assets/`** — diagrams: progression chart, v1 file stack, v1 quickstart, v2 wiring, v3 stack, and v2→v3 comparison.
 
 The brain (SOUL.md, USER.md, AGENTS.md, MEMORY.md, domain files) stays private. This repo holds the *pattern*, not anyone's specific brain.
 
@@ -84,7 +93,7 @@ Because shipping a CoS isn't a single-night project — it's an arc. Each versio
 
 ## Codex note
 
-This repo is also the live pattern I use to test Codex against Claude: same markdown brain, same operating rules, same task loops, different model/runtime. The point is not model fandom. It is learning which deployment patterns survive across tools.
+Codex was a v2.6 parallel-run experiment: same markdown brain, same operating rules, same task loops, different model/runtime. It clarified the portability thesis, but v3's forward surface is the custom Slack + VPS runtime. The point is not model fandom. It is learning which deployment patterns survive across tools.
 
 ## Companion writing
 
@@ -92,7 +101,7 @@ The build is documented in essays as it ships:
 
 - v1 — https://tarikhkorula.com/wisdom/founder-cos-v1-cowork-edition/
 - v2 — https://tarikhkorula.com/wisdom/cos-v2-cloudy-visions
-- v3 — coming with v3
+- v3 — drafting
 - v4 — coming with v4
 
 ## License
