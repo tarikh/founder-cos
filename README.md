@@ -76,13 +76,13 @@ v2 makes the chief of staff always-on. v3 makes it reachable where the work is a
 
 Upgrade to v3 when the interaction layer becomes the constraint: re-tagging rituals, hosted bot fragility, needing your CoS in Slack threads, wanting custom code, wanting fail-loud writes, or wanting a runtime you can restart yourself.
 
-The brain still doesn't change. The private repo remains the source of truth. v3 adds a custom Slack app, a VPS worker, Agent SDK sessions per Slack thread, and a serialized git writer that owns capture/write-back. Full step-by-step in `v3-slack-vps.md`.
+The brain still doesn't change. The private repo remains the source of truth. v3 adds a custom Slack app, a VPS worker, Agent SDK sessions per Slack thread, and a serialized git writer that owns capture/write-back. Full step-by-step in `v3-slack-vps.md`; the reference worker lives at [`tarikh/cos-slack-worker`](https://github.com/tarikh/cos-slack-worker).
 
 ## What's in this repo
 
 - **`v1-desktop.md`** — the v1 blueprint. **Start here.**
 - **`v2-always-on.md`** — the v2 blueprint. Cloud heartbeats via Claude Routines, brain in a private GitHub repo, shut the laptop and the system keeps running.
-- **`v3-slack-vps.md`** — the v3 blueprint. Custom Slack app, VPS worker, Agent SDK, same private brain repo, serialized git writer, fail-loud ops.
+- **`v3-slack-vps.md`** — the v3 blueprint. Custom Slack app, VPS worker, Agent SDK, same private brain repo, serialized git writer, fail-loud ops. Reference implementation: [`tarikh/cos-slack-worker`](https://github.com/tarikh/cos-slack-worker).
 - **`assets/`** — diagrams: progression chart, v1 file stack, v1 quickstart, v2 wiring, v3 stack, and v2→v3 comparison.
 
 The brain (SOUL.md, USER.md, AGENTS.md, MEMORY.md, domain files) stays private. This repo holds the *pattern*, not anyone's specific brain.

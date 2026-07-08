@@ -3,6 +3,9 @@
 
 *Companion essay: Founder CoS v3 - Own the Surface, drafting. This document is the blueprint; the essay is the why.*
 
+Reference implementation:
+[`tarikh/cos-slack-worker`](https://github.com/tarikh/cos-slack-worker).
+
 ---
 
 ## What v3 unlocks
@@ -58,7 +61,7 @@ The boundary matters. Do not overclaim "everything runs on the VPS" if your cale
 In addition to a working v2 setup:
 
 - **A private GitHub repo for the brain.** This remains the source of truth.
-- **A service repo for the worker.** Keep code separate from the brain.
+- **A service repo for the worker.** Keep code separate from the brain. The reference implementation is [`tarikh/cos-slack-worker`](https://github.com/tarikh/cos-slack-worker).
 - **A VPS.** Linux, systemd, enough RAM for one Node process plus one agent turn. A small box is fine if traffic is personal.
 - **Node 22 + TypeScript comfort.** The reference shape uses Bolt for Slack and the Claude Agent SDK.
 - **Slack app admin access.** You need to create/install a custom app in your workspace.
@@ -128,7 +131,9 @@ Minimum pieces:
 
 Install the app to the workspace and invite it to the CoS channel.
 
-### 2. Scaffold the worker
+### 2. Clone or scaffold the worker
+
+The reference implementation is [`tarikh/cos-slack-worker`](https://github.com/tarikh/cos-slack-worker). Clone that if you want the tested shape; use the layout below if you are building your own variant.
 
 Reference layout:
 
