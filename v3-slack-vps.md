@@ -1,7 +1,7 @@
 # The Founder's Chief-of-Staff Stack
 ### Slack + VPS Edition - own the surface
 
-*Companion essay: Founder CoS v3 - Own the Surface, drafting. This document is the blueprint; the essay is the why.*
+*Companion essay: [Founder CoS v3: Portable, Mobile, Interactive](https://tarikhkorula.com/wisdom/founder-cos-v3-portable-mobile-interacive). This document is the blueprint; the essay is the why.*
 
 Reference implementation:
 [`tarikh/cos-slack-worker`](https://github.com/tarikh/cos-slack-worker).

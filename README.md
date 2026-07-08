@@ -101,7 +101,7 @@ The build is documented in essays as it ships:
 
 - v1 — https://tarikhkorula.com/wisdom/founder-cos-v1-cowork-edition/
 - v2 — https://tarikhkorula.com/wisdom/cos-v2-cloudy-visions
-- v3 — drafting
+- v3 — https://tarikhkorula.com/wisdom/founder-cos-v3-portable-mobile-interacive
 - v4 — coming with v4
 
 ## License
